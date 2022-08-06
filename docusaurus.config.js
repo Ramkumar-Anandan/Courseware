@@ -47,8 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          path: "Semester-1",
-          routeBasePath: "Semester-1",
+          path: "course1",
+          routeBasePath: "course1",
           async sidebarItemsGenerator({
             defaultSidebarItemsGenerator,
             ...args
@@ -65,6 +65,19 @@ const config = {
   ],
 
   plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "course2",
+        path: "course2",
+        routeBasePath: "course2",
+        sidebarPath: require.resolve("./sidebars.js"),
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return parseSidebarItems(sidebarItems);
+        }
+      }
+    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -100,8 +113,7 @@ const config = {
         title: "Kalvi courseware",
         logo: {
           alt: "Kalvi logo",
-          src:
-            "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/img/logo.svg"
+          src: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/img/logo.svg"
         },
         items: [
           {
@@ -109,6 +121,14 @@ const config = {
             label: "Courses",
             position: "left",
             items: [
+              {
+                label: "Course1",
+                to: "/course1/docs"
+              },
+              {
+                label: "Course2",
+                to: "/course2/docs"
+              },
               {
                 label: "Semester-1",
                 to: "/Semester-1/docs"
