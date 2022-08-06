@@ -47,8 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          path: "course1",
-          routeBasePath: "course1",
+          path: "Semester-1",
+          routeBasePath: "Semester-1",
           async sidebarItemsGenerator({
             defaultSidebarItemsGenerator,
             ...args
@@ -100,7 +100,8 @@ const config = {
         title: "Kalvi courseware",
         logo: {
           alt: "Kalvi logo",
-          src: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/img/logo.svg"
+          src:
+            "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/img/logo.svg"
         },
         items: [
           {
