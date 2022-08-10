@@ -1,0 +1,205 @@
+---
+title: HTML Forms
+---
+
+import Youtube from "@site/src/components/Youtube";
+
+
+## HTML forms
+
+An HTML form is made up of any number of form elements. These elements enable the users to enter information or make a selection from preset options.
+
+In HTML, a form is defined using the `<form> </form>` tags. The basic form elements are defined between these two tags.
+
+You can imagine a structure of this kind.
+
+`<form>`
+
+...
+
+(form elements go here)
+
+...
+
+`</form>`
+
+The most common ways for users to specify/enter the value in these forms are:
+
+ 1. Using Text input
+ 2. Using Radio button
+ 3. Using Checkbox
+ 4. Using Drop down menu
+
+**1) Creating a Text Input**
+
+One way users can enter data into an HTML document is via text. The most common scenario is when users have to enter a username and password to enter a site.
+
+In this type of input, we get a single-line text box to enter data. The texts typed appear directly on the web page.
+
+The syntax for this is
+
+`<input type = "text" name="Name">`
+
+Here, the key for this text input value is 'Name'.
+
+Try it by yourself!
+
+`< insert code editor>`
+
+**2) Creating Radio Buttons**
+
+The second type of input is taken using a radio button. Radio buttons are used when you want users to be able to select one and only one of the options. Below is an example of how you create them.
+
+Open VS editor & try it out yourself. Now or never!
+
+**Code:**
+
+`<input type="radio" name="color" value="red">Red<br>`
+
+  
+
+`<input type="radio" name="color" value="green">Green<br>`
+
+  
+
+`<input type="radio" name="color" value="blue">Blue<br>`
+
+  
+  
+  
+
+![](https://lh5.googleusercontent.com/iElzRobbgZzI4cZtihO_hPimBCY2IPj9HAx6fSFdvc5aNLh_EI1x_ViRL5xDnj6iDQOR3pcSSsAQwMqcZw0G7X7lu0fHW7bqstsYwkwAr_WxWk6sjQ7Fl2JTkLfGb7ksVSXxmvDfWPd0HYLsJHbXc5E)
+
+In this case, the key is color, and the values can be either red, green, or blue, depending on the radio button selected.
+
+If we want to pre-select a radio button, we'll specify "selected" at the end of the `<input>` tag like this.
+
+`<input type="radio" name="color" value="red" selected>Red<br>`
+
+  
+  
+
+Try creating Radio buttons!
+
+`< insert code editor>`
+
+**3) Checkbox**
+
+Another type of input is the checkbox. Checkboxes are used when you want users to be able to select more than one of the options. Below is an example:
+
+**Code:**
+
+`<input type="checkbox" name="color" value="red">Red<br>`
+
+  
+
+`<input type="checkbox" name="color" value="green">Green<br>`
+
+  
+
+`<input type="checkbox" name="color" value="blue">Blue<br>`
+
+  
+  
+  
+
+![](https://lh4.googleusercontent.com/AtzdOFWDh0YCHXQir4uEEMu--fMBkU22iiKLYNoMI_2ArlJxk54s97ltrhZkE4WhGTwrszhNb7CQJTp5pw1m3nPYQFJC0vwj2IrMdwqlEbtPEIhBT0TkvHf7TReO8X9Lqv3UWC23DVSe-G8LuCyafg0)
+
+In this case, the key is color, and the values can be either red, green, or blue, depending on the checkbox(es) selected. The "color" key will have multiple values if multiple checkboxes are checked.
+
+If we want to pre-select a check box, we'll specify "checked" at the end of the `<input>` tag, such as follows:
+
+`<input type="checkbox" name="color" value="red" checked>Red<br>`
+
+Try creating a Checkbox!
+
+`< insert code editor>`
+
+**4) Dropdown Menu**
+
+A Dropdown menu is another common way to specify input data. Selecting a state is often done via a dropdown menu. Users can select one or more items in a dropdown menu. Below is an example of creating a single-selection drop-down menu:
+
+Code:
+
+`<select name=color>`
+`<option value="red">Red</option>`
+`<option value="green">Green</option>`
+`<option value="blue">Blue</option>`
+
+In this case, the key is color, and the values can be either red, green, or blue, depending on the item selected.
+
+If we want to pre-select a checkbox, we'll specify "selected" at the end of the `<input>` tag like this.
+
+`<input type="checkbox" name="color" value="red" selected>Red<br>`
+
+If we want to select multiple items, we specify "multiple" at the end of the `<select>` tag like this.
+
+`<select name=color multiple>`
+
+![](https://lh4.googleusercontent.com/yD7JLsV8E8QwYc2RLjKCSbnKU5egkZ2J0sTPnTjPN7Wzs6rBoOD7QjzkUiXokt_OD9LEq6mWTtcTI4dYXSf-28nX1yRkiZq2nlWrrkJ1jpUFlD_h8MqyTuP_b7RExsAuiIjWdFKE0xxl5TWBVqC-Vis)
+
+Try creating a Dropdown menu!
+
+`< insert code editor>`
+
+Well, now is the time to test your memory!
+
+Submitting the form
+
+When a user submits the form, you need the system to do something with that data. The action page is the page where the form is submitted. This page could contain advanced scripts or programming that inserts the form data into a database or emails an administrator.
+
+You nominate an action page with the action attribute.
+
+`<form action="#">`
+`First name: <input type="text" name="first_name" value="" maxlength="100">`
+`Last name: <input type="text" name="last_name" value="" maxlength="100">`
+`<input type="submit" value="Submit">`
+`</form>`
+
+On replacing the value of # with the desired URL, your response would be captured in the place that you have specified instead of #.
+
+**Try it by yourself!**
+
+`< insert code editor>`
+
+![Excited Stephen Colbert GIF by The Late Show With Stephen Colbert](https://lh3.googleusercontent.com/log9ii5VlOBMoKnJoxzctpABg9DpX0F8W3G8i4jDDw592n8pbcW0ek8Racw7_JwZ47_CufYtsVNKj4HxsW2Ud5V48yXtHDq31c48dq-XTT0g0Dodj7K7zQoSxh0KaQZgW5N0_7d_3igLB37AKltsGnc)
+
+Here is your first mini Project.
+
+You would be creating a simple form yourself with the help of this video.
+
+<Youtube videoId="D4jj3HHrnSU" />
+
+Well, now is the time to test your memory!
+
+**Practise Time:**
+
+As a Kalvian, you should spend a reasonable amount of time on the websites which help you grow Professionally.
+
+So you are planning to send a form to all your friends to check their LinkedIn availability and interest in connecting with you.
+
+Your task: Create a form to do the purpose mentioned above.
+
+![](https://lh6.googleusercontent.com/rBU8iESwokJhYa20P1LGxPzzep9xwSZFdvc6tK01q6oxK1_jpK8V9y_FCCkospii7w5vmvXt_mTYjAD9ETly6-BpWCzUf1x8v2r3LUaDibkMtzvjLrWaw5c-83kc3XImAMjOlDPlirNi2eUQ1xmW9zw)
+
+`< insert code editor>`
+
+​
+
+![](https://lh6.googleusercontent.com/8qzWrOslCCCYL62hCGoIv1RPJJ6iSHBuiX3oCpU3LwEfcHhJzQ6YhLRwtGjTAtaVrgq-kK7oJKJ1i4k3F4KocjMiEUwjABv5j3Zsqz74tn83dyP0dBX23yrHI54XI2tqRgIHnquu16wVxQLVrpfgvvE)
+
+  
+
+# Summary
+
+In this lesson, we have learned about Forms, Different input options like - Text Input, Radio Button, CheckBox, Dropdown, Form Action, and How to build a simple form from scratch.
+
+## Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+[https://www.w3schools.com/html/html_forms.asp](https://www.w3schools.com/html/html_forms.asp)
+
+[https://www.geeksforgeeks.org/html-forms/](https://www.geeksforgeeks.org/html-forms/)
+
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
