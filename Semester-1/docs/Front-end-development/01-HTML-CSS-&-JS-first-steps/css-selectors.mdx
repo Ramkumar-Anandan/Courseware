@@ -1,0 +1,204 @@
+---
+title: HTML Forms
+---
+
+import Youtube from "@site/src/components/Youtube";
+
+
+Given a pen in your hand, if we ask you to draw, the first question you would ask is about the work area.
+
+Where do I need to draw? 🤔
+
+Isn't it?
+
+  
+
+Similarly, we must select the layout or area that needs to be styled before styling. And CSS has a wide and comprehensive variety of selectors that help with this.
+
+  
+
+CSS selectors define the elements to which a particular CSS rule is applied. In other words, these selectors are used to select HTML elements we want to style on a web page.
+
+  
+
+A CSS rule generally consists of a selector and one or more declaration blocks.
+
+  
+
+CSS Rule = Selector + Declaration
+
+  
+
+
+
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/anatomy+of+css+selectors.png)
+
+  
+
+👉 **Property**
+It is assigned to a selector to manipulate its style.
+**Example:** background, border, text-align.
+
+👉 **Value**
+It is assigned to set a property.
+**Example:** The property color value is set to yellow in the diagram above.
+
+👉 **Declaration**
+It defines the property and value of a selector.
+**Example:** color: yellow.
+
+  
+
+They are 4 different types of widely used selectors in CSS.
+
+
+![](https://media.giphy.com/media/l378kmO7gdbXaesXS/giphy.gif)
+
+ 
+First comes,
+
+### Universal Selector ♾️♾️♾️
+
+The universal selector would select the entire content on the page. It goes with a usual * and a block of code.
+
+```
+
+*{
+
+font-family: Times New Roman
+
+}
+
+```
+
+When you use the above code, the entire web page body would have the text style as Times New Roman.
+
+  
+
+Next is,
+
+### Class Selector 🏛️🏛️🏛️
+
+Class selectors are individually assigned to define a specific crowd.
+
+This selector type will ensure that we have reusability in the CSS styling. A class selector is assigned using the indicator "." followed by a name. For example,
+
+In HTML,
+
+`<div class= "sampleClass"><div>`
+
+In CSS
+
+```
+
+.sampleClass {
+
+color: orange-red;
+
+}
+
+```
+
+After the Class selector, the next important selector is,
+
+### Element Selector
+
+Element selector will select the elements of the same type. We can go with this code if we need to select the content in a paragraph.
+
+```
+
+p{
+
+color: orange
+
+}
+
+```
+
+But, if there are multiple elements to be styled, the best practice would be to group them. This is called Grouping. For example, if you need to style all elements in h1, h2, and p tags, then here is how you group them.
+
+```
+
+h1, h2, p {
+
+color: orange
+
+}
+
+```
+
+Finally, the only individual selector in this group is...
+
+### ID selector🪪🪪🪪
+
+ID selectors are individually assigned to define on a per-element basis.
+
+This selector type is preferred when a specific block is styled. An ID selector is assigned using the indicator "#" to precede a name. For example,
+
+In HTML,
+
+`<h2 id="idToBeColored">Kalvi<h2>`
+
+In CSS
+
+```
+
+#idToBeColored {
+
+color: orange
+
+}
+
+```
+
+Shall we try using all these different types of selectors?
+
+Now let’s watch a video on selectors.
+
+  
+
+<Youtube videoId="1Rs2ND1ryYc" start="1332" end="2353" />
+
+  
+
+If you want to get deeper into CSS selectors, here is a video. 😄😄😄
+
+  
+
+<Youtube videoId="1Rs2ND1ryYc" start="2353" end="4918" />
+
+![](https://media3.giphy.com/media/l1J9wXoC8W4JFmREY/giphy.gif?cid=790b7611a1e40b8e83577c2f2ff5ed5d7e728c8853e1e885&rid=giphy.gif))
+
+#### Practice Time:
+
+Try using all the selectors you learned in this lesson to style the webpage.
+
+Expected output:
+
+`< image to be added here>`
+
+Hint: Refer to HTML code to understand the class name and the ID name and style the page using CSS selectors.
+
+(Do not edit HTML code)
+
+`<insert code editor>`
+
+![](https://media2.giphy.com/media/3mfprP1DPTrlC/giphy.gif?cid=790b7611156580c7b6e976d6a6da96a8283eede8ae6918e2&rid=giphy.gif)
+
+And voila, that’s the end of all concepts in this lesson.
+
+## Summary
+
+In this lesson, we learned what CSS selectors are, the different types of CSS Selectors (Universal Selectors, Element Selectors, ID Selectors, Class Selectors), and how to use these selectors to style elements in HTML.
+
+## Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+  
+
+[https://www.w3schools.com/css/css_selectors.asp](https://www.w3schools.com/css/css_selectors.asp)
+
+[https://www.javatpoint.com/css-selector](https://www.javatpoint.com/css-selector)
+
+[https://css-tricks.com/almanac/selectors/](https://css-tricks.com/almanac/selectors/)

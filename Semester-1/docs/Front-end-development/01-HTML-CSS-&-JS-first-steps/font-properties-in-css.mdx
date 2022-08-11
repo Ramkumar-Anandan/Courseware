@@ -1,0 +1,223 @@
+# Font Properties in CSS
+
+Playing with fonts and text is always fun. Remember the good old school days when you practiced your signature or tried to write your name using different fonts/colors?
+
+It's not just fun. Many of us ignore font and text to add beauty to the website. Try to check out your favorite websites and compare them with their competitors.
+
+At times, it is the small things that matter the most!
+
+In this lesson, we will discuss styling fonts and texts using CSS.
+
+## Font
+
+The CSS font properties define the font-family, font-size, font-boldness, font-style, and font-variant of a text.
+
+### a) Font-family
+
+Why can't the fonts have a family?!🤔
+
+The font-family property specifies the type of font. Below is how you specify the font-family property. In this case, we have specified the font family to be Verdana.
+
+`p {font-family: verdana;}`
+
+Once you select your desired font, we must worry about the size. Let’s see how to change font sizes.
+
+### b) Font Size
+
+The font-size property specifies the size of the font. The size can be numerical (length or percentage), or in text (possible values are "xx-large", "x-large", "large", "medium", "small", "x-small", and "xx-small"). Below are some examples😄😄😄
+
+#### Example
+
+Font Size 9px
+
+```
+p {
+font-size: 50px;
+}
+```
+
+Font Size 150%
+
+```
+p {
+font-size: 150%;
+}
+```
+
+Font Size Large
+
+```
+p {
+font-size: large;
+}
+```
+
+#### Practise Time!!
+
+Use the playground to practice what you have learned.
+
+`<insert code editor>`
+
+Now let’s look at font-weight.💪💪💪
+
+### c) Font Weight🏋️🏋️🏋️
+The font-weight property specifies the thickness of the font. Font weight can go from 100 to 900, with 900 being the thickest. One can also specify "bold", "bolder", or "normal".
+
+This is font-weight 900
+
+```
+p {
+font-weight: 900;
+}
+```
+
+This is a bold font-weight
+
+```
+p {
+font-weight: bold;
+}
+```
+
+Now let’s look at font styles.
+
+### d) Font Style
+
+The font-style property specifies whether the font is italic, oblique, or normal.
+
+This font style is italic.
+
+`p {font-style: italic;}`
+
+### e) Font Variant
+
+The font-variant property specifies whether the font will be displayed in small caps. Small caps mean that all letters will be displayed in the capital case, but the font size is smaller than usual. The possible values are 'small-caps' and 'normal.' Let's look at the example below.
+
+#### Example
+
+With the following CSS,
+
+```
+span {
+
+font-variant:small-caps;
+
+}
+```
+#### Practise Time!!
+
+The HTML code below,
+
+`<span>initial in small caps</span>`
+ AND LATER IN LARGE CAPS.
+
+Use the playground to practice what you have learned.
+
+`<insert code editor>`
+
+![](https://media2.giphy.com/media/l0IyjsRmOGhlj1DeU/giphy.gif?cid=790b7611a8be74ca9f685a7953d219b227303c373a55240d&rid=giphy.gif)
+
+### Try it yourself!
+
+![](https://media0.giphy.com/media/3o6fJb3wLZeWqHu5os/giphy.gif?cid=790b76118f6a436bb4f7d201073faa2497477933d1252931&rid=giphy.gif)
+
+Open your VS Code editor and try out this piece of code.
+
+We strongly recommend you code by yourself.
+
+In HTML,
+```
+<html>
+<head>
+<title>External style sheet</title>
+</head>
+<body>
+<h2>This is an example of font property</h2>
+<p class="fp">This paragraph shown in the verdana font</p>
+<p class="fp1">This paragraph in italic</p>
+<p class="fp2">This paragraph shows normal value of font-variant property.</p>
+<p class="fp3">This is the result of small-caps value</p>
+<p class="fp4">It is a font weight property</p>
+<p class="fp5">Font-weight lighter</p>
+<p class="fp6">Font-weight bold</p>
+<p class="fp7">The font weight is 800<p>
+<p class="fp8">It is a font size property</p>
+<p class="fp9">font-size xx-small</p>
+<p class="fp10">font-size 30px</p>
+</body>
+</html>
+```
+
+In CSS,
+
+```
+.fp{
+font-family: verdana;
+}
+
+.fp1{
+font-style:italic;
+}
+
+.fp2{
+font-variant: normal;
+}
+
+.fp3{
+font-variant: small-caps;
+}
+
+.fp4{
+font-weight: normal;
+}
+
+.fp5{
+font-weight: lighter;
+}
+
+.fp6{
+font-weight: bold;
+}
+
+.fp7{
+font-weight: 800;
+}
+
+.fp8{
+font-size: normal;
+}
+
+.fp9{
+font-size: xx-small;
+}
+
+.fp10{
+font-size: 30px;
+}
+```
+
+#### Output:
+
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/example+of+font+property.png)
+
+So far, we have played around with fonts. Now, how about experimenting with placements and gaps between them?
+
+And Voila, that’s the end of all the concepts in this lesson!!
+
+## Summary
+
+In this lesson, we have learned that:
+
+-   Font Properties in CSS (`font-family, font-size, font-weight, font-variant, font-style`)
+
+    
+
+## Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+  
+
+`<links should be added>`
+
+
