@@ -1,0 +1,160 @@
+---
+title: CSS Inheritance
+---
+
+import Youtube from "@site/src/components/Youtube";
+
+
+
+## Inheritance 👪👪👪
+
+When you read the word inheritance, your first thought would be a child inheriting characteristics from their parents. And, in CSS, too, it kind of works in a similar fashion.
+
+Inheritance is a way of propagating property values from parent elements to their children. For example, the `<title>` tag is always inside the `<head>` tag, so the `<head>` tag is the parent of the `<title>` tag.
+
+For example, have a look at the below code.
+
+### Examples
+
+In HTML,
+
+`<p>I am a <strong>KALVIAN</strong></p>`
+
+  
+
+In CSS,
+
+```
+p {
+color: #00FF00;
+}
+
+strong {
+font-size:16px;
+}
+```
+
+  
+
+The entire sentence would go green, even though no color property was defined for the `<strong>` tag. But the `<strong>` tag is a child element of `<p>`, so the `<strong>` inherits the style defined for `<p>`, which in this case is the font color.
+
+Practice the inheritance in the web playground.
+
+`<insert code editor here>`
+
+### Did you know? 🤔
+
+Not all CSS Properties are inherited. Just like how children don't inherit all characteristics of their parents, not every CSS property is inherited by the default child elements.
+
+Let's say you set a background-image property for an element, and the child elements inherited the background-image property from their parents. How the resultant look like? Messy right?
+
+There is no single list of all elements that inherit CSS properties. However, here are a few elements we can name for sure.
+
+ - color
+ - direction
+ - font-family
+ - font-size
+ - font-style
+ - font-variant
+ - font-weight
+ - font
+ - letter-spacing
+ - line-height
+ - list-style
+ - text-align
+ - word-break
+ - word-spacing
+ - word-wrap
+
+The child elements do not inherit the border. For example, if the border property were inheritable, setting a border on a single element would cause the same border to appear on all its child elements. And that would definitely make the web page look bad.
+
+![](https://media1.giphy.com/media/qnOBmH70CGSVa/giphy.gif?cid=790b7611b181344e063bf4273c502ecf89b862a254dcbc9a&rid=giphy.gif)
+
+As discussed in the previous chapter, we all know that a class is specified by including a period (.) before the selector name. We can also specify different instances of a class selector. This is achieved by using the following syntax:
+
+```
+
+[Type Selector].[Class Name] {
+
+property:value;
+
+...
+
+}
+
+```
+
+  
+
+Let's watch a video on Inheritance.
+
+<Youtube videoId="dFSxBi2zGfM" />
+
+Let’s move on to Multiple classes.
+
+## Multiple Classes ✖️✖️✖️
+
+It is possible to include multiple classes at the same time. For example, assume we have the following CSS declaration,
+
+In HTML,
+
+`<p class="fontlarge fontblue">This is an example of multiple classes.</p>`
+
+  
+
+In CSS,
+
+```
+.fontlarge {
+font-size:20px;
+}
+
+.fontblue {
+color:#FF0000;
+}
+```
+
+The same can be imparted to ids too. The above code in terms of id would look like
+
+In HTML,
+
+`<p id="fontlarge"><b id="fontblue">This is an</b> example of multiple classes.</p>`
+
+In CSS,
+
+```
+#fontlarge {
+Font-size:40px;
+}
+
+#fontblue {
+color:#FF0000;
+}
+```
+
+📄 Note: Multiple IDs for a tag would not stand, unlike class. ID is unique, and a tag cannot go with multiple ids.
+
+  
+
+![](https://media0.giphy.com/media/mgqefqwSbToPe/giphy.gif?cid=790b761189b4bdc589320ab6c609796467c118643a8ce9b1&rid=giphy.gif)
+
+## Summary
+
+In this lesson, we have learned about:
+
+-   The concept of inheritance in CSS
+    
+-   Class, Multiple class inheritance
+    
+
+## Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+  
+
+[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+
+[https://medium.com/@fay_jai/inheritance-cascading-and-specificity-in-css-explained-815c3b5eb164](https://medium.com/@fay_jai/inheritance-cascading-and-specificity-in-css-explained-815c3b5eb164)
+
+[https://webplatform.github.io/docs/tutorials/inheritance_and_cascade/](https://webplatform.github.io/docs/tutorials/inheritance_and_cascade/)
